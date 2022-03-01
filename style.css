@@ -1,0 +1,350 @@
+@font-face{
+    font-family: "font-1";
+    src: url(./OpenSans-Light.ttf);
+}
+
+@font-face{
+    font-family: "font-2";
+    src: url(./Roboto-Light.ttf);
+}
+
+
+/* Pour faires les reglages generaux */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Pour enlever les boules des listes et pleins d autres choses */
+    list-style-type: none;
+}
+
+body{
+    font-family: 'font-1';
+    color: #603c07;
+}
+
+
+/* ************************** header ************************** */
+
+header{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+a{
+    color:#603c07;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+header a:hover{
+    color:#603c07a3;
+}
+
+span{
+    color:#603c07;
+    font-size: 14px;
+}
+
+nav{
+    /* Pour fixer la barre de navigation en haut */
+    position: fixed;
+    /* Pour une largeur de 100% */
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto auto;
+    background: white;
+    z-index: 3;
+    box-shadow: 0px -6px 8px 0px black;
+}
+
+nav ul li a{
+    text-decoration: none;
+}
+
+#h1{
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    border-bottom: solid 1px rgb(240,240,240);
+    vertical-align: center;
+    padding: 10px 0px;
+}
+
+#h2{
+    display: flex;
+}
+
+#h2 li{
+    padding: 0px 10px;
+}
+
+#h3{
+    /* pour bien centrer */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0px;
+}
+
+#h3 li{
+    padding: 0px 15px;
+}
+
+#logo{
+    width: 14rem;
+}
+
+/* ************************** body ************************** */
+
+#pain1{
+    margin-top: 185.5px;
+    background: url(/pain.jpg) center/cover;
+    height: 550px;
+}
+
+#filtre{
+    background: rgba(0, 0, 0, 0.364);
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(1px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pain2 h1{
+    font-family: 'font-2';
+    color: #ffffff;
+    line-height: 48px;
+    font-weight: 300;
+    font-size: 48px;
+}
+
+#pain2 h2{
+    /* pour bien centrer */
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    line-height: 26px;
+    font-weight: 300;
+    font-size: 30px;
+    margin-top: 15px;
+}
+
+#grid1{
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+
+}
+
+#pain2{
+    display: inline;
+    justify-content: center;
+}
+
+.pain2 h1{
+    font-family: 'font-2';
+    color: #603c07;
+    line-height: 48px;
+    font-weight: 300;
+    font-size: 48px;
+}
+
+.pain2 h2{
+    /* pour bien centrer */
+    display: flex;
+    justify-content: center;
+    color: #603c07;
+    line-height: 26px;
+    width: 370px;
+    font-weight: 300;
+    font-size: 30px;
+    margin-top: 15px;
+    border-bottom: thin solid #603c0721;
+    padding-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* ********** 2em partie du body ********** */
+#grid2{
+    display: grid;
+    grid-template-columns: 19.5% 61% 19.5%;
+    grid-template-rows: auto auto auto auto;
+    margin-top: 100px;
+}
+
+#p1{
+    font-family: 'font-2';
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 30px;
+    border-bottom: solid 1px #A3C300;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#p2{
+    font-family: 'font-1';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+#p3{
+    font-family: 'font-2';
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 22px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+
+#nos_produits{
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr;  
+    margin-top: 65px;  
+}
+
+#nos_produits div img{
+    height: 358px;
+    border: solid 3px #F3F1E7;
+    border-radius: 100%;
+    background: white;
+    transition: 0.5s;
+}
+
+#nos_produits div img:hover{
+    background: rgba(110, 109, 109, 0.124);
+}
+
+#nos_produits div{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#nos_produits div h2{
+    font-family: 'font-2';
+    text-align: center;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 36px;
+    margin-top: 15px;
+}
+
+#nos_produits div p{
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+#nos_produits div a{
+    display: inline-block;
+    border: solid 2px #603c07;
+    font-size: 15px;
+    line-height: 29px;
+    font-weight: bold;
+    padding: 0px 20px;
+    text-decoration: none;
+    font-family: #492807;
+}
+
+#nos_produits div a:hover{
+    background: #a3c3002c;
+    border: solid 2px #A3C300;
+}
+
+
+/* ********** 3em partie du body ********** */
+
+.grid{
+    display: grid;
+    grid-template-columns: 19.5% 61% 19.5%;
+}
+
+#grid4{
+    justify-content: center;
+    margin-top: 105px;
+}
+
+#grid4 h2{
+    font-family: 'font-2';
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 30px;
+    border-bottom: solid 1px #A3C300;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#truc{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-top: 75px;
+}
+
+.ptruc{
+    font-family: 'font-1';
+    text-align: center;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+#plan{
+    clip-path: polygon(50% 15%, 100% 0, 100% 100%, 0 100%, 0 0);
+    background: rgb(249,248,243);
+    padding-top: 20px;
+    margin-top: 25px;
+}
+
+#grid5{
+    display: grid;
+    grid-template-columns: 19.5% 61% 19.5%;
+    justify-content: center;
+    clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0);
+    background: rgb(243,241,231);
+}
+
+#div h2{
+    margin-top: 65px;
+    font-family: 'font-2';
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 30px;
+    border-bottom: solid 1px #A3C300;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#flex{
+    /* Permet de modifier les dimensions d un element afin de remplir l espace *
+    * disponible de sont contenaur */ 
+    display: flex;
+    /* ça centre les elements verticalement */ 
+    align-items: center;
+    /* ça centre les elements horizontalement*/ 
+    justify-content: center;
+    width: 100%;
+    padding-top: 20px;
+}
+
+#flex img{
+    margin: 0px auto;
+    transition: 0.5s;
+}
+
+#flex img:hover{
+    margin: 0px auto;
+    transform: scale(1.2);
+    cursor: pointer;
+}
